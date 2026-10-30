@@ -5,7 +5,10 @@
     'category': 'Services',
     'author': 'fares',
     'depends': ['base'],
-    'data': [],
+    'data': [
+    'security/ir.model.access.csv',
+    'views/biblio_livre_views.xml',
+    'views/biblio_menus.xml',],
     'application': True,
     'license': 'LGPL-3',
 }

@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_biblio_gestion_biblio_gestion,biblio_gestion.biblio_gestion,model_biblio_gestion_biblio_gestion,base.group_user,1,1,1,1
+access_biblio_livre_user,biblio.livre user,model_biblio_livre,base.group_user,1,1,1,1
