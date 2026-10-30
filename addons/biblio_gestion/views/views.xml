@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="biblio_gestion.list">
+      <field name="name">biblio_gestion list</field>
+      <field name="model">biblio_gestion.biblio_gestion</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="biblio_gestion.action_window">
+      <field name="name">biblio_gestion window</field>
+      <field name="res_model">biblio_gestion.biblio_gestion</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="biblio_gestion.action_server">
+      <field name="name">biblio_gestion server</field>
+      <field name="model_id" ref="model_biblio_gestion_biblio_gestion"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="biblio_gestion" id="biblio_gestion.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="biblio_gestion.menu_1" parent="biblio_gestion.menu_root"/>
+    <menuitem name="Menu 2" id="biblio_gestion.menu_2" parent="biblio_gestion.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="biblio_gestion.menu_1_list" parent="biblio_gestion.menu_1"
+              action="biblio_gestion.action_window"/>
+    <menuitem name="Server to list" id="biblio_gestion" parent="biblio_gestion.menu_2"
+              action="biblio_gestion.action_server"/>
+-->
+  </data>
+</odoo>
